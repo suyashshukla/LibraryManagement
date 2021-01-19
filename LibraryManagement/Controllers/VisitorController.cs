@@ -19,9 +19,9 @@ namespace LibraryManagement.Controllers
         }
 
         [Route("{visitorId}")]
-        public Book GetVisitor(int visitorId)
+        public Visitor GetVisitor(int visitorId)
         {
-            return new Book();
+            return new Visitor();
         }
 
         [Route("{visitorId}/update")]
