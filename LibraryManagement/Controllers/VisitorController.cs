@@ -37,7 +37,7 @@ namespace LibraryManagement.Controllers
         }
 
         [Route("{visitorId}/delete")]
-        public int DeleteBook(int visitorId)
+        public int DeleteVisitor(int visitorId)
         {
             return 0;
         }
