@@ -13,25 +13,34 @@ namespace LibraryManagement.Controllers
     public class BookController : ControllerBase
     {
 
-        [Route(""]
-        public IEnumerable<Book> GetBooks()
+        [Route("all")]
+        public IEnumerable<Book> GetAllBooks()
         {
-
+            return new List<Book>();
         }
 
-        [Route(""]
+        [Route("{bookId}")]
         public Book GetBook(int bookId)
         {
-
+            return new Book();
         }
 
-        [Route(""]
-        public int UpdateBook(Book book)
+        [Route("{bookId}/update")]
+        public int PutBook(int bookId, Book book)
         {
-
+            return 0;
         }
 
-        public int DeleteBook (int bookId)
+        [Route("add")]
+        public int PostBook(Book book)
+        {
+            return 0;
+        }
 
+        [Route("{bookId}/delete")]
+        public int DeleteBook (int bookId)
+        {
+            return 0;
+        }
     }
 }
